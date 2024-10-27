@@ -1,0 +1,160 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.light {
+    background-color: rgb(145, 235, 145);
+  }
+
+.highlight {
+    color : red;
+    font-weight: bold;
+  }
+
+.dark{
+    background-color: #e0e0e0;              
+  }
+
+.article {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 70%;
+  }
+
+.keyword {
+    color: red;
+    font-weight: bold;
+    /* font-style: italic; */
+  }
+
+.important {
+    background-color: #ffff00;
+    font-weight: bold;
+    /* font-style: italic; */
+  }
+
+.element {
+      width: 200px;           /* Ширина контента */
+      padding: 10px;          /* Внутренний отступ */
+      border: 2px solid red;  /* Граница */
+      margin: 20px;           /* Внешний отступ */
+  }
+  
+  a:visited {
+    color: blue;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    color: white;
+    text-decoration: underline;
+    background-color: darkolivegreen;
+    text-decoration: solid;
+  }
+  
+  table {
+    width: 80%; /* Устанавливает ширину таблицы */
+    border-collapse: collapse; /* Убирает двойные границы между ячейками */
+    margin: 0 auto;
+  }
+
+  th, td {
+    border: 1px solid black; /* Устанавливает границу для ячеек */
+    padding: 1px; /* Добавляет отступы внутри ячеек */
+    /* text-align: left; /* Выравнивает текст по левому краю */
+  }
+
+  th {
+    background-color: green; /* Устанавливает цвет фона для заголовков */
+    text-align: center; /* Выравнивает текст по центру */
+    color : #ddd;
+  }
+
+  td {
+    text-align: left; /* Выравнивает текст по левому краю */
+  }
+  
+  textarea {
+    padding : 10px;
+    border : 1px solid #ccc;
+    border-radius: 4px;
+    resize : vertical;
+    color : black;
+  }
+
+  button {
+    background-color: #4CAF50;
+    color : white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+
+  body {
+    margin: 0px;
+    font-family: Arial, sans-serif;
+   /*  font-size: 8px;  */
+  }
+
+  .sticky-box {
+    position: sticky;
+    top: 0;
+  }
+
+  .menubar {
+    position: relative;
+    width: 80%;
+    height: 25px;
+    margin: 0 auto;
+    background-color: yellow;
+    color: white;
+  }
+  
+  .main-button {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .bite-button {
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .table-button {
+    position: absolute;
+    left: 48%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .warehouse-button {
+    position: absolute;
+    left: 67%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .set-button {
+    position: absolute;
+    left: 85%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .logo {
+    position: relative;
+    width: 80%;
+    height: 69px;
+    margin: 0 auto;
+    background-color: rgb(153, 217, 234);
+  }

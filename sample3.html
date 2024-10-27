@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Диалоговые окна</title>
+</head>
+<body>
+    
+    <dialog id="my-dialog" open>
+        <h2>Dialog Title</h2>
+        <p>This is a simple dialog window.</p>
+        <button id="open-dialog">Open Dialog</button>
+    </dialog>
+
+    <dialog id="my-second-dialog">
+        <h2>Dialog Title 2</h2>
+        <p>This is a simple dialog window 2.</p>
+    </dialog>
+
+    <script>
+        const openButton = document.getElementById('open-dialog');
+        const secDialog = document.getElementById('my-second-dialog');
+
+        openButton.addEventListener("click", ()=> {
+        secDialog.show();
+        });
+    </script>
+</body>

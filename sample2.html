@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Dialog</title>
+</head>
+<body>
+    <button id="open-dialog">Open Dialog</button>
+    
+    <dialog id="my-dialog">
+        <h2>Dialog Title</h2>
+        <p>This is a simple dialog window.</p>
+        <button id="close-dialog">Close</button>
+    </dialog>
+
+    <script>
+        const openButton = document.getElementById('open-dialog');
+        const closeButton = document.getElementById('close-dialog');
+        const dialog = document.getElementById('my-dialog');
+
+        openButton.addEventListener("click", ()=> {
+           dialog.showModal(); 
+        });
+        
+        closeButton.addEventListener("click", ()=> {
+           dialog.close(); 
+        });
+        
+    </script>
+<footer>
+  <div data-user-id="12345" data-role="admin">
+    Пользователь с ID 12345, роль - администратор.
+  </div>
+  <script>
+  // Находим первый элемент на странице, у которого есть атрибут data-user-id
+  const userElement = document.querySelector('[data-user-id]');
+  
+  // Получаем значение атрибута data-user-id и выводим его в консоль
+  console.log(userElement.dataset.userId); // Вывод: 12345
+  
+  // Получаем значение атрибута data-role и выводим его в консоль
+  console.log(userElement.dataset.role); // Вывод: admin
+
+</script>
+</footer>
+</body>
+</html>

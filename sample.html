@@ -1,0 +1,31 @@
+<html>
+<body>
+<main>
+    <br>
+    <dialog id="myDialog">
+      <form method="dialog">
+        <p>Нажмите клавишу "Esc", чтобы увидеть результат</p>
+      </form>
+      
+    </dialog>
+    <button id="showDialog">Открыть диалоговое окно</button>
+
+    <script>
+      // Получаем ссылки на элементы в DOM
+const dialog = document.getElementById('myDialog');        // Диалоговое окно
+const showDialogButton = document.getElementById('showDialog'); // Кнопка для открытия диалога
+// const closeButton = document.getElementById('closeButton'); // Кнопка для закрытия диалога (предполагается, что она есть внутри диалога)
+
+// Добавляем обработчик события на кнопку "showDialog"
+showDialogButton.addEventListener("click", () => {
+  dialog.showModal(); // Открываем диалог в модальном режиме
+});
+
+// Добавляем обработчик события на отмену диалога (например, при нажатии Esc или на кнопку закрытия в заголовке)
+dialog.addEventListener('cancel', () => {
+  alert('Dialog was cancelled'); // Выводим сообщение о том, что диалог был отменен
+});
+    </script>
+</main>
+</body>
+</html>

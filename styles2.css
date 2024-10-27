@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition: transform 0.5s;
+    margin: 15px;
+}
+.box:hover {
+    transform: translate(30px, 30px);
+}
+.box2 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: transform 0.5s;
+    margin: 15px;
+}
+.box2:hover {
+    transform: scale(1.2);
+}
+.box3 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    transform-origin: bottom right;
+    transition: transform 0.5s;
+    margin: 15px;
+}
+.box3:hover {
+    transform: rotate(45deg);
+}
