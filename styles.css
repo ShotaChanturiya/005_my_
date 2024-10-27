@@ -158,3 +158,8 @@
     margin: 0 auto;
     background-color: rgb(153, 217, 234);
   }
+
+   .main {
+    width: 80%;
+    margin: 0 auto;
+   }
