@@ -53,8 +53,17 @@
     text-decoration: solid;
   }
   
-  table {
-    width: 80%; /* Устанавливает ширину таблицы */
+  /* .table-container {
+    overflow-x: scroll;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+  } */
+
+
+
+  .table-st {
+    width: 80%; /*Устанавливает ширину таблицы */
     border-collapse: collapse; /* Убирает двойные границы между ячейками */
     margin: 0 auto;
   }
@@ -159,6 +168,11 @@
     background-color: rgb(153, 217, 234);
   }
 
+  .todo {
+    flex: 1 1 20%;
+    background-color: #f4f4f4;
+  }
+
    .main {
     width: 80%;
     margin: 0 auto;
@@ -168,3 +182,42 @@
     width: 80%;
     margin: 10px auto;
    }
+
+   .content {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  @media (max-width: 600px) {
+    .hide {
+      display: none;
+      
+    }
+    table {
+      font-size: 10px;
+      width: 100%;
+    }
+    .logo {
+      position: relative;
+      width: 100%;
+    }
+    .table-st {
+      width: 100%; /*Устанавливает ширину таблицы */
+    }
+  }
+
+  @media (min-width: 601px) and (max-width: 1822px) {
+    table {
+      font-size: 12px;
+      width: 100%;
+    }
+    .logo {
+      position: relative;
+      width: 100%;
+    }
+     
+     .table-st {
+      width: 100%; /*Устанавливает ширину таблицы */
+    }
+  }
