@@ -106,7 +106,8 @@
   }
 
   body {
-    margin: 0px;
+    /* width: 80%; */
+    margin: 0px auto;
     font-family: Arial, sans-serif;
    /*  font-size: 8px;  */
   }
@@ -160,12 +161,30 @@
     transform: translateY(-50%);
   }
 
-  .logo {
-    position: relative;
-    width: 80%;
-    height: 69px;
-    margin: 0 auto;
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    /* grid-auto-columns: minmax(50px, 1000px); */
+    grid-template-rows: 69px;
+    
+  }
+  .grid-item {
     background-color: rgb(153, 217, 234);
+    color: black;
+    padding: 0px;
+    text-align: end;
+    align-items: center;
+  }  
+  .flex-container {
+    display: flex;
+    gap: 0px; 
+  }
+  .flex-item {
+    background-color: rgb(153, 217, 234);
+    padding: 0px;
+    flex: 1;
+    text-align: center;
   }
 
   .todo {
